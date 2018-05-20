@@ -2,15 +2,6 @@ import React from "react";
 import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 
-import Header from "./screens/Header/";
-import Header1 from "./screens/Header/1";
-import Header2 from "./screens/Header/2";
-import Header3 from "./screens/Header/3";
-import Header4 from "./screens/Header/4";
-import Header5 from "./screens/Header/5";
-import Header6 from "./screens/Header/6";
-import Header7 from "./screens/Header/7";
-import Header8 from "./screens/Header/8";
 import HeaderSpan from "./screens/Header/header-span";
 import HeaderNoShadow from "./screens/Header/header-no-shadow";
 import BasicFooter from "./screens/footer/basicFooter";
@@ -121,11 +112,20 @@ import Segment from "./screens/segment";
 import NHToast from "./screens/toast/";
 import Actionsheet from "./screens/actionsheet";
 
+import HeaderC from "./screens/camille/header";
+import Suggestions from "./screens/suggestions/suggestions"
+import Scanned from "./screens/scanned/scanned"
+import Tenues from "./screens/tenues/tenues"
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    HeaderC: { screen: HeaderC },
+    Suggestions: { screen: Suggestions },
+    Scanned: { screen: Scanned},
+    Tenues: { screen: Tenues },
+
     Anatomy: { screen: Anatomy },
-    Header: { screen: Header },
     Footer: { screen: Footer },
     NHBadge: { screen: NHBadge },
     NHButton: { screen: NHButton },
@@ -144,6 +144,7 @@ const Drawer = DrawerNavigator(
     NHPicker: { screen: NHPicker },
     NHTab: { screen: NHTab },
     NHThumbnail: { screen: NHThumbnail },
+    NHCardImage: { screen: NHCardImage },
     NHTypography: { screen: NHTypography },
     Segment: { screen: Segment },
     NHToast: { screen: NHToast },
@@ -162,16 +163,12 @@ const AppNavigator = StackNavigator(
   {
     Drawer: { screen: Drawer },
 
-    Header1: { screen: Header1 },
-    Header2: { screen: Header2 },
-    Header3: { screen: Header3 },
-    Header4: { screen: Header4 },
-    Header5: { screen: Header5 },
-    Header6: { screen: Header6 },
-    Header7: { screen: Header7 },
-    Header8: { screen: Header8 },
-    HeaderSpan: { screen: HeaderSpan },
-    HeaderNoShadow: { screen: HeaderNoShadow },
+    HeaderC: { screen: HeaderC },
+    Suggestions: { screen: Suggestions },
+    Scanned: { screen: Scanned},
+    Tenues: { screen: Tenues},
+
+    NHCardImage: { screen: NHCardImage },
 
     BasicFooter: { screen: BasicFooter },
     IconFooter: { screen: IconFooter },
@@ -191,7 +188,6 @@ const AppNavigator = StackNavigator(
     BasicCard: { screen: BasicCard },
     NHCardItemBordered: { screen: NHCardItemBordered },
     NHCardItemButton: { screen: NHCardItemButton },
-    NHCardImage: { screen: NHCardImage },
     NHCardShowcase: { screen: NHCardShowcase },
     NHCardList: { screen: NHCardList },
     NHCardHeaderAndFooter: { screen: NHCardHeaderAndFooter },

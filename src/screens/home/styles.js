@@ -10,15 +10,17 @@ export default {
   },
   logoContainer: {
     flex: 1,
-    marginTop: deviceHeight / 8,
-    marginBottom: 30
+    marginTop: 10,
+    marginBottom: 30,
+    alignItems: "center"
   },
   logo: {
-    position: "absolute",
-    left: Platform.OS === "android" ? 40 : 50,
-    top: Platform.OS === "android" ? 35 : 60,
-    width: 280,
-    height: 100
+    width: 190,
+    height: 178
+  },
+  logo2: {
+    width: 188,
+    height: 164
   },
   text: {
     color: "#D8D8D8",
